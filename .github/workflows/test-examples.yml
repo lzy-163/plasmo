@@ -45,9 +45,9 @@ jobs:
           pnpm i --no-frozen-lockfile
           pnpm run build:packages
           pnpm run build:api
-          pnpm i
+          pnpm i --no-frozen-lockfile
           pnpm run build:cli
-          pnpm i
+          pnpm i --no-frozen-lockfile
 
       - name: "Go to each example and try to build it"
         run: |
